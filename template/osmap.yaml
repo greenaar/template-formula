@@ -1,0 +1,3 @@
+# osmap.yaml – overrides keyed on the `os` grain (e.g. Ubuntu, Fedora,
+# Raspbian). Left empty; only needed when one specific distro needs
+# different values than its os_family default.

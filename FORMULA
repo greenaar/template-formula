@@ -1,0 +1,9 @@
+name: template
+os: CentOS, CentOS Linux, Debian, Leap, Raspbian, RedHat, SUSE, Ubuntu, openSUSE
+os_family: Debian, RedHat, Suse
+version: 1.0.0
+release: 1
+minimum_version: 3006
+summary: 'template formula'
+description: 'A skeleton to copy when starting a new formula. It follows the saltstack-formulas layout conventions and does nothing useful on its own — the package, user, group and service it defines are placeholders.'
+top_level_dir: template

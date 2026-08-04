@@ -1,0 +1,3 @@
+# osfingermap.yaml – overrides keyed on the `osfinger` grain
+# (os-major_version, e.g. "Debian-13", "CentOS Linux-7"). Left empty;
+# only needed for release-specific quirks.

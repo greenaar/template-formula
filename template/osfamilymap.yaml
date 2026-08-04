@@ -1,0 +1,19 @@
+# osfamilymap.yaml – overrides keyed on the `os_family` grain. This is
+# the most common place to put per-OS package names.
+
+Debian:
+  pkg:
+    name:
+      - apache2
+      - libapache2-mod-php
+
+RedHat:
+  pkg:
+    name:
+      - httpd
+      - php-fpm
+
+Suse:
+  pkg:
+    name:
+      - apache2

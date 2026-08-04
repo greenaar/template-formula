@@ -1,0 +1,28 @@
+# defaults.yaml – base, OS-agnostic default values for this formula.
+#
+# Copy this whole `template` directory as the starting point for a new
+# formula: rename the directory and the top-level `template:` key below
+# (and in map.jinja/init.sls) to your formula's name everywhere.
+#
+# These are the lowest-priority values in the merge cascade built by
+# map.jinja (osarchmap.yaml -> osfamilymap.yaml -> osmap.yaml ->
+# osfingermap.yaml -> pillar). Don't hardcode environment- or
+# host-specific values here - put those in pillar instead, so upgrading
+# the formula doesn't clobber local customizations.
+
+template:
+  pkg:
+    name: []            # overridden per OS family in osfamilymap.yaml
+  app:
+    user: myuser
+    group: mygroup
+  service:
+    name: myapp
+    enable: true
+  config:
+    # Example values a config-file template would consume via
+    # `template.config.port` / `template.config.debug`. Vary these per
+    # environment through pillar targeting (e.g. a per-environment
+    # top.sls), not through a custom grain baked into the formula.
+    port: 8080
+    debug: true

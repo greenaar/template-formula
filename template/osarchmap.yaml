@@ -1,0 +1,3 @@
+# osarchmap.yaml – overrides keyed on the `osarch` grain (e.g. x86_64,
+# aarch64, arm64). Left empty here; add entries only when a package
+# name, path, or other value genuinely differs by CPU architecture.
